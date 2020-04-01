@@ -21,9 +21,7 @@ public class BigIntegerClass {
         int n=sc.nextInt();
         System.out.println(fact(n));
 
-    }
-
-
+    }54
 
 
 

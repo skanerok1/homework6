@@ -1,25 +1,28 @@
 public class Main {
 
     public static void main(String[] args) {
-
-        int a = 4;
-        int b = a;
-        int m[][] = new int [b][a];
-        for (int i = 0; i < a; i++)
-        {
-            for (int j = 0; j < a; j++)
-            {
-                m[i][j]=0;
+        //Задание 17
+        int x[][] = new int[5][5];
+        for (int i = 0; i < x.length; i++) {
+            for (int j = 0; j < x[i].length; j++) {
+                if (i == 0) {
+                    x[i][j] = 1;
+                } else if (i == 1) {
+                    x[i][1] = 1;
+                    x[i][2] = 1;
+                    x[i][3] = 1;
+                } else if (i == 2) {
+                    x[i][2] = 1;
+                } else if (i==3){
+                    x[i][1]=1;
+                    x[i][2]=1;
+                    x[i][3]=1;
+                }else if (i==4){
+                    x[i][j] = 1;
+                }
+                System.out.print(" `" + x[i][j] + "` ");
             }
-        }
-
-        for (int i = 0; i < b; i++)
-        {
-            for (int j = 0; j < a; i++)
-            {
-
-            }
+            System.out.println();
         }
     }
-
 }
